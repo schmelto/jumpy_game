@@ -26,12 +26,12 @@ public class Destroy : MonoBehaviour
     void Update()
     {
         Object[] allObjects = GameObject.FindObjectsOfType(typeof(MonoBehaviour)); //returns Object[]
-        if(allObjects.Length <= 6){
+        if(allObjects.Length <= 6)
+        {
             createNewObject = true;
         } else {
             createNewObject = false;
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
