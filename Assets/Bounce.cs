@@ -22,11 +22,15 @@ public class Bounce : MonoBehaviour
         if(collision.gameObject.GetComponent<Rigidbody2D>().velocity.y <= 0)
         // check if player is going downwards
         {
-
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 600f);
             // this should work for mega jump like coin feature
-
         }
 
+        // if(collision.gameObject.GetComponent<Rigidbody2D>())
+        // // check if player is going downwards
+        // {
+        //     collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 600f);
+        //     // this should work for mega jump like coin feature
+        // }
     }
 }
